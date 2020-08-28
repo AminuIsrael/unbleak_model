@@ -1,7 +1,7 @@
 import pandas as pd
 from statistics import mode
 from CustomCode.model_predict import prediction
-df = pd.read_csv("../Cleaned_data.csv")
+df = pd.read_csv("./Cleaned_data.csv")
 
 result = []
 
