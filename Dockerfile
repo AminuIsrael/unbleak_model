@@ -19,7 +19,6 @@ COPY ./app /app
 WORKDIR /app
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python CustomCode/total_tweet_sentiment.py
 
 
 # Make /app/* available to be imported by Python globally to better support several use cases like Alembic migrations.
