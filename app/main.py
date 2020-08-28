@@ -54,7 +54,7 @@ def get_sentiment():
 def fetch_tweets():
     try:
         data = request.args.get('username')
-        if data != None and data["username"] != "":
+        if data != None and data != "":
             #pass command to function
             getoldtweets3.main(data)
             result = total_tweet_sentiment.get_tweet_overview()
